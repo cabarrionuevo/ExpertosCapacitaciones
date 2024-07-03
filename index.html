@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
-
+	
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,8 +18,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<!--
-			CSS
-			============================================= -->
+		CSS
+		============================================= -->
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -28,14 +28,9 @@
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="js/aux.js"></script>
 	<script>
-		let lastUrl = localStorage.getItem('url-data');
-		
-		if(lastUrl){			
-			const { href } = JSON.parse(lastUrl);					
-			location.replace(href);
-			localStorage.removeItem('url-data');
-		}
+		getLastUrl();
 	</script>
 </head>
 
@@ -94,7 +89,6 @@
 	<!-- End feature-cat Area -->
 
 
-	<script src="js/aux.js"></script>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

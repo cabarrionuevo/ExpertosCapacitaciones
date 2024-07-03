@@ -6,3 +6,15 @@ const logUrl = (event) => {
         href,
     }));
 }
+
+const getLastUrl = () => {    
+    let lastUrl = localStorage.getItem('url-data');
+    console.log(`lastUrl: `, lastUrl);
+
+    if (lastUrl) {
+        const { href } = JSON.parse(lastUrl);
+        console.log(`href: `, href);
+        location.replace(href);
+        localStorage.removeItem('url-data');
+    }
+}
