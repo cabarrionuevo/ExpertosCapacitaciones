@@ -27,17 +27,7 @@
 			<link rel="stylesheet" href="css/nice-select.css">					
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
-			<script>
-				const prueba = (event) => {
-					const href = event.currentTarget.href;
-					const id = event.currentTarget.id;
-					localStorage.setItem('url-data', JSON.stringify({
-						id,
-						href,
-					}));
-				}
-			</script>
+			<link rel="stylesheet" href="css/main.css">			
 		</head>
 		<body>
 
@@ -61,7 +51,7 @@
 				 			<img src="img/capacitaciones.png" alt="">
 							<p>CAPACITACIONES</p>
 							 <div>
-                 			 <a class="primary-btn cta-btn" href="material/capacitaciones.html"  onClick="prueba(event)" id="capacitaciones">ver más</a>
+                 			 <a class="primary-btn cta-btn" href="material/capacitaciones.html"  onClick="logUrl(event)" id="capacitaciones">ver más</a>
                 			</div>
 							</div>
 						</div>
@@ -92,6 +82,7 @@
 			<!-- End feature-cat Area -->
 			
 
+			<script src="js/aux.js"></script>
 			<script src="js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="js/vendor/bootstrap.min.js"></script>			
