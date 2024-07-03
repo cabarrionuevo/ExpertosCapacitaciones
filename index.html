@@ -1,70 +1,82 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">			
-		</head>
-		<body>
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script>
+		let lastUrl = localStorage.getItem('url-data');
+		
+		if(lastUrl){			
+			const { href } = JSON.parse(lastUrl);					
+			location.replace(href);
+			localStorage.removeItem('url-data');
+		}
+	</script>
+</head>
 
-			
-			
-			<!-- Start feature-cat Area -->
-			<section class="feature-cat-area pt-70" id="category">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-20 col-lg-10">
-							<div class="title text-center">
-								<h1 class="mb-10">Capacitaciones</h1>
-								<h3> Accedé a las capacitaciones, trivias y artículos</h3>
-							</div>
+<body>
+
+
+
+	<!-- Start feature-cat Area -->
+	<section class="feature-cat-area pt-70" id="category">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-20 col-lg-10">
+					<div class="title text-center">
+						<h1 class="mb-10">Capacitaciones</h1>
+						<h3> Accedé a las capacitaciones, trivias y artículos</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="single-fcat">
+
+						<img src="img/capacitaciones.png" alt="">
+						<p>CAPACITACIONES</p>
+						<div>
+							<a class="primary-btn cta-btn" href="material/capacitaciones.html" onClick="logUrl(event)"
+								id="capacitaciones">ver más</a>
 						</div>
-					</div>						
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="single-fcat">
-							
-				 			<img src="img/capacitaciones.png" alt="">
-							<p>CAPACITACIONES</p>
-							 <div>
-                 			 <a class="primary-btn cta-btn" href="material/capacitaciones.html"  onClick="logUrl(event)" id="capacitaciones">ver más</a>
-                			</div>
-							</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="single-fcat">
+						<img src="img/trivias.png" alt="">
+						<p>TRIVIAS Y RETOS</p>
+						<div>
+							<a class="primary-btn cta-btn" href="material/trivias.html" onclick="prueba(event)"
+								id="trivias">ingresar</a>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="single-fcat">
-									<img src="img/trivias.png" alt="">
-							<p>TRIVIAS Y RETOS</p>
-								 <div>
-                 			 	<a class="primary-btn cta-btn" href="material/trivias.html" onclick="prueba(event)" id="trivias">ingresar</a>
-                				</div>
-							</div>
-						</div>
-						<!--
+					</div>
+				</div>
+				<!--
 						<div class="col-lg-4 col-md-6 col-sm-6">
 							<div class="single-fcat">
 									<img src="img/articulos.png" alt="">
@@ -75,31 +87,32 @@
 							</div>
 						</div>
 						-->
-						
-							</div>
-					</div>				
-			</section>
-			<!-- End feature-cat Area -->
-			
 
-			<script src="js/aux.js"></script>
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>		
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+			</div>
+		</div>
+	</section>
+	<!-- End feature-cat Area -->
 
 
+	<script src="js/aux.js"></script>
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+</body>
 
+</html>
