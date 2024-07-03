@@ -8,12 +8,10 @@ const logUrl = (event) => {
 }
 
 const getLastUrl = () => {    
-    let lastUrl = localStorage.getItem('url-data');
-    console.log(`lastUrl: `, lastUrl);
+    let lastUrl = localStorage.getItem('url-data');    
 
     if (lastUrl) {
-        const { href } = JSON.parse(lastUrl);
-        console.log(`href: `, href);
+        const { href } = JSON.parse(lastUrl);        
         location.replace(href);
         localStorage.removeItem('url-data');
     }
