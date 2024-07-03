@@ -29,13 +29,7 @@
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script>
-		let lastUrl = localStorage.getItem('url-data');
-		
-		if(lastUrl){			
-			const { href } = JSON.parse(lastUrl);					
-			location.replace(href);
-			localStorage.removeItem('url-data');
-		}
+		getLastUrl();
 	</script>
 </head>
 
