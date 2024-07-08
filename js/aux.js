@@ -24,6 +24,9 @@ const getLastUrl = () => {
 					window.location.assign(href);
 					localStorage.setItem('current-width', window.innerWidth);					
 				}
+			}else{
+				localStorage.setItem('current-width', window.innerWidth);
+				localStorage.removeItem('url-data');
 			}
 		}		
 }
